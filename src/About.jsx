@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
