@@ -1,13 +1,12 @@
-import About from "./About";
-import Home from "./Home";
-import Projects from "./Projects";
+// import { Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Home from "./Home";
+import About from "./About";
+import Projects from "./Projects";
 import Resume from "./Resume";
 import NotFound from "./NotFound";
-import { Routes, Route, Navigate } from "react-router-dom";
-
-
+import Footer from "./Footer";
 
 export default function App() {
      
