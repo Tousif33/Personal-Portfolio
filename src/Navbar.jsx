@@ -43,13 +43,15 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3 text-white">
         {/* Logo */}
-        <div className="flex items-center">
+      <div className="flex items-center">
+          <Link to="/home" className="flex items-center">
           <img
-            src="nav.png"
-            alt="Logo"
-            className="h-16 w-16 rounded-2xl border"
-          />
+           src="nav.png"
+          alt="Logo"
+          className="h-16 w-16 rounded-2xl border"
+         />
           <span className="text-3xl font-bold pl-4">Raza</span>
+        </Link>
         </div>
 
         {/* Desktop Tabs */}

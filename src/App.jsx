@@ -1,5 +1,5 @@
-// import { Routes, Route, Navigate } from "react-router-dom";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+// app.jsx
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
