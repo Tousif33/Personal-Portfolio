@@ -6,7 +6,9 @@ import App from "./App.jsx"
 
 const root = createRoot(document.getElementById("root"))
 root.render(
+    <React.StrictMode>
   <BrowserRouter basename="/Personal-Portfolio/">
     <App />
   </BrowserRouter>
+   </React.StrictMode>
 )
