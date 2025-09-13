@@ -5,11 +5,11 @@ import {Routes, Route } from 'react-router-dom';
 import "./index.css"
 import App from './App.jsx';
 
-const basename = process.env.VERCEL ? '' : '/Personal-Portfolio/';
+const base = import.meta.env.VITE_BASENAME || '/';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter basename={base}>
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
