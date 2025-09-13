@@ -1,8 +1,10 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react"
-import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+const isVercel = process.env.VERCEL;
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Personal-Portfolio/", // 👈 must match repo name
-})
+  base: isVercel ? "/" : "/Personal-Portfolio/",
+});
