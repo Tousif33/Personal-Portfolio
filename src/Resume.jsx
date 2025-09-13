@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen text-white  bg-gradient-to-b from-gray-800 to-black ">
       <h1 className="text-2xl font-bold mb-6">My Resume</h1>
       
       {/* Resume Preview (Optional: embed PDF) */}
