@@ -1,14 +1,18 @@
 import React from "react"
+import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom"
-import { createRoot } from "react-dom/client"
+import {Routes, Route } from 'react-router-dom';
 import "./index.css"
-import App from "./App.jsx"
+import App from './App.jsx';
 
-const root = createRoot(document.getElementById("root"))
-root.render(
-    <React.StrictMode>
-  <BrowserRouter basename="/Personal-Portfolio/">
-    <App />
-  </BrowserRouter>
-   </React.StrictMode>
-)
+const basename = process.env.VERCEL ? '' : '/Personal-Portfolio/';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter basename={basename}>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
