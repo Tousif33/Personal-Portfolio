@@ -46,9 +46,9 @@ export default function Navbar() {
       <div className="flex items-center">
           <Link to="/home" className="flex items-center">
           <img
-           src="nav.png"
+           src="icons8-coder-64.png"
           alt="Logo"
-          className="h-16 w-16 rounded-2xl border"
+          className="h-16 w-16 "
          />
           <span className="text-3xl font-bold pl-4">Raza</span>
         </Link>
