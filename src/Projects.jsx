@@ -21,7 +21,7 @@ const sampleProjects = [
     description: "My personal portfolio with an interactive projects section and blog.",
     tech: ["Vite","React js", "Tailwind"],
     github: "https://github.com/Tousif33/Personal-Portfolio",
-    live: "https://tousif33.github.io/Personal-Portfolio/",
+    live: "https://tousif33.github.io/home",
     image: portfolioImg ,
     year: 2025,
   },
