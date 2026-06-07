@@ -9,8 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "build:gh-pages": "vite build --base=/Personal-Portfolio/",
-    "predeploy": "npm run build:gh-pages",
-    "deploy": "gh-pages -d dist"
+      "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",

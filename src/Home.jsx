@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const fullText = "Frontend Developer";
+  const fullText = "Full Stack Developer";
   const [displayedText, setDisplayedText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
 
