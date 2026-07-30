@@ -1,12 +1,33 @@
 import weatherImg from "./assets/weatherimg.webp";
 import portfolioImg from "./assets/portfolio.png";
 import tictacImg from "./assets/Tictacgame.png";
+import shopnestlogo from "./assets/shopnestlogo.png";
 
 
 const sampleProjects = [
+   {
+  id: "p1",
+  title: "ShopNest - Full Stack E-Commerce Platform",
+  description:
+    "A full-stack MERN e-commerce application with secure JWT authentication, product browsing, advanced search and filtering, shopping cart, order management, admin dashboard, Cloudinary image uploads, and responsive UI. Built with scalable REST APIs and deployed using Vercel and Render.",
+  tech: [
+    "React",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "Cloudinary"
+  ],
+  github: "https://github.com/Tousif33/ShopNest", 
+  live: "https://shop-nest-mauve.vercel.app/",
+  image: shopnestlogo,
+  year: 2026,
+},
  
   {
-    id: "p1",
+    id: "p2",
     title: "Weather App",
     description: "Weather App that fetches real-time weather data using the OpenWeather API.",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -16,7 +37,7 @@ const sampleProjects = [
     year: 2025,
   }, 
    {
-    id: "p2",
+    id: "p3",
     title: "Portfolio Website",
     description: "My personal portfolio with an interactive projects section and blog.",
     tech: ["Vite","React js", "Tailwind"],
@@ -26,7 +47,7 @@ const sampleProjects = [
     year: 2025,
   },
   {
-    id: "p3",
+    id: "p4",
     title: "Tic-Tac Toe Game",
     description: "A simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. This project allows two players to play the classic Tic-Tac-Toe game in the browser.",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -35,7 +56,7 @@ const sampleProjects = [
     image: tictacImg,
     year: 2025,
   },
-  
+ 
 ];
 
 import { Github, ExternalLink } from "lucide-react";

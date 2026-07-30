@@ -1,4 +1,3 @@
-
 import {
   FaHtml5,
   FaCss3Alt,
@@ -7,6 +6,8 @@ import {
   FaReact,
   FaNodeJs,
   FaWindows,
+  FaGithub,
+  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -15,6 +16,13 @@ import {
   SiMongodb,
   SiGit,
   SiPostman,
+  SiRedux,
+  SiCloudinary,
+  SiJsonwebtokens,
+  SiMysql,
+  SiRender,
+  SiVercel,
+  SiAmazonwebservices,
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -79,27 +87,31 @@ export default function About() {
 
   <div className="flex flex-wrap justify-center gap-6 mb-16">
     {[
-      {
-        icon: <FaHtml5 size={45} className="text-orange-500" />,
-        name: "HTML5",
-      },
-      {
-        icon: <FaCss3Alt size={45} className="text-blue-500" />,
-        name: "CSS3",
-      },
-      {
-        icon: <FaJs size={45} className="text-yellow-400" />,
-        name: "JavaScript",
-      },
-      {
-        icon: <FaReact size={45} className="text-cyan-400" />,
-        name: "React.js",
-      },
-      {
-        icon: <SiTailwindcss size={45} className="text-teal-400" />,
-        name: "Tailwind CSS",
-      },
-    ].map((skill, index) => (
+  {
+    icon: <FaHtml5 size={45} className="text-orange-500" />,
+    name: "HTML5",
+  },
+  {
+    icon: <FaCss3Alt size={45} className="text-blue-500" />,
+    name: "CSS3",
+  },
+  {
+    icon: <FaJs size={45} className="text-yellow-400" />,
+    name: "JavaScript",
+  },
+  {
+    icon: <FaReact size={45} className="text-cyan-400" />,
+    name: "React.js",
+  },
+  {
+    icon: <SiRedux size={45} className="text-purple-500" />,
+    name: "Redux Toolkit",
+  },
+  {
+    icon: <SiTailwindcss size={45} className="text-teal-400" />,
+    name: "Tailwind CSS",
+  },
+].map((skill, index) => (
       <div
         key={index}
         className="bg-gray-800 border border-gray-700 p-6 rounded-2xl flex flex-col items-center justify-center h-40 w-40 text-center transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-purple-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
@@ -116,24 +128,41 @@ export default function About() {
   </h3>
 
   <div className="flex flex-wrap justify-center gap-6">
-    {[
-      {
-        icon: <FaNodeJs size={45} className="text-green-500" />,
-        name: "Node.js",
-      },
-      {
-        icon: <SiExpress size={45} className="text-gray-300" />,
-        name: "Express.js",
-      },
-      {
-        icon: <SiMongodb size={45} className="text-green-600" />,
-        name: "MongoDB",
-      },
-      {
-        icon: <FaJava size={45} className="text-red-500" />,
-        name: "Java",
-      },
-    ].map((skill, index) => (
+    {
+   [
+  {
+    icon: <FaNodeJs size={45} className="text-green-500" />,
+    name: "Node.js",
+  },
+  {
+    icon: <SiExpress size={45} className="text-gray-300" />,
+    name: "Express.js",
+  },
+  {
+    icon: <SiMongodb size={45} className="text-green-600" />,
+    name: "MongoDB",
+  },
+  {
+    icon: <SiMysql size={45} className="text-blue-500" />,
+    name: "SQL",
+  },
+  {
+    icon: <SiJsonwebtokens size={45} className="text-pink-500" />,
+    name: "JWT",
+  },
+  {
+    icon: <SiCloudinary size={45} className="text-blue-400" />,
+    name: "Cloudinary",
+  },
+  {
+    icon: <FaJava size={45} className="text-red-500" />,
+    name: "Java",
+  },
+  {
+    icon: <FaPython size={45} className="text-yellow-300" />,
+    name: "Python",
+  },
+].map((skill, index) => (
       <div
         key={index}
         className="bg-gray-800 border border-gray-700 p-6 rounded-2xl flex flex-col items-center justify-center h-40 w-40 text-center transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-purple-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
@@ -156,24 +185,41 @@ export default function About() {
   </p>
 
   <div className="flex flex-wrap justify-center gap-6">
-    {[
-      {
-        icon: <VscVscode size={45} className="text-blue-500" />,
-        name: "VS Code",
-      },
-      {
-        icon: <SiGit size={45} className="text-orange-500" />,
-        name: "Git",
-      },
-      {
-        icon: <FaWindows size={45} className="text-blue-400" />,
-        name: "Windows",
-      },
-      {
-        icon: <SiPostman size={45} className="text-orange-400" />,
-        name: "Postman",
-      },
-    ].map((tool, index) => (
+    {
+     [
+  {
+    icon: <VscVscode size={45} className="text-blue-500" />,
+    name: "VS Code",
+  },
+  {
+    icon: <SiGit size={45} className="text-orange-500" />,
+    name: "Git",
+  },
+  {
+    icon: <FaGithub size={45} className="text-white" />,
+    name: "GitHub",
+  },
+  {
+    icon: <SiPostman size={45} className="text-orange-400" />,
+    name: "Postman",
+  },
+  {
+    icon: <SiVercel size={45} className="text-white" />,
+    name: "Vercel",
+  },
+  {
+    icon: <SiRender size={45} className="text-purple-400" />,
+    name: "Render",
+  },
+  {
+    icon: <SiAmazonwebservices size={45} className="text-orange-500" />,
+    name: "AWS",
+  },
+  {
+    icon: <FaWindows size={45} className="text-blue-400" />,
+    name: "Windows",
+  },
+].map((tool, index) => (
       <div
         key={index}
         className="bg-gray-800 border border-gray-700 p-6 rounded-2xl flex flex-col items-center justify-center h-40 w-40 text-center transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-purple-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)]"
